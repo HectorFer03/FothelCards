@@ -9,7 +9,7 @@ plugins {
 android {
     namespace = "com.example.fothelcards"
     compileSdk {
-        version = release(36)
+        version = release(35)
     }
 
     defaultConfig {
