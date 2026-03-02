@@ -22,7 +22,8 @@ abstract class BaseDatosApp : RoomDatabase() {
                     contexto.applicationContext,
                     BaseDatosApp::class.java,
                     "fothelcards_bd"
-                ).build()
+                ).fallbackToDestructiveMigration() // <--- AÑADE ESTA LÍNEA AQUÍ
+                .build()
                 INSTANCIA = instancia
                 instancia
             }
